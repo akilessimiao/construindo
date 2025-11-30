@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construindo</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FFF8F0; /* Off-white quente */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #FFF8F0, #E0F0F5); /* Gradiente renovador */
+        }
+        .container {
+            max-width: 1080px;
+            background-color: #FFF8F0;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-size: 2em;
+            color: #CFA349; /* Dourado */
+            font-weight: 800; /* ExtraBold */
+        }
+        .logo-sub {
+            color: #5A5A5A;
+            font-weight: 600; /* SemiBold */
+        }
+        .header-line {
+            color: #1E4A57; /* Azul Petróleo */
+            font-weight: 500; /* Medium */
+            font-size: 1.2em;
+            border-bottom: 2px solid #CFA349; /* Traço decorativo */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .hexagon {
+            width: 200px;
+            height: 230px;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            margin: 0 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .hexagon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hex-left { background-color: #1E4A57; } /* Moldura azul */
+        .hex-right { background-color: #CFA349; } /* Moldura dourada */
+        .title {
+            color: #1E4A57;
+            font-weight: 800;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px #CFA349; /* Sombreamento dourado */
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #1E4A57;
+            font-weight: 500;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .presentation {
+            text-align: left;
+            color: #3A3A3A;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .differentials {
+            text-align: left;
+        }
+        .differentials h3 {
+            color: #CFA349;
+            font-weight: 700;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .differentials ul {
+            list-style: none;
+            padding: 0;
+        }
+        .differentials li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            color: #3A3A3A;
+        }
+        .differentials li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #CFA349;
+            font-size: 1.2em;
+            text-shadow: 0 0 5px rgba(207,163,73,0.5); /* Brilho renovador */
+        }
+        .services {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .services h4 {
+            color: #1E4A57;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            position: relative;
+            padding-right: 30px;
+            margin-bottom: 10px;
+            color: #3A3A3A;
+            text-align: right;
+        }
+        .services li::after {
+            content: '■';
+            position: absolute;
+            right: 0;
+            color: #CFA349;
+            font-size: 1.2em;
+            transform: rotate(45deg); /* Rotacionado para dinamismo */
+        }
+        .footer {
+            margin-top: 40px;
+        }
+        .footer-title {
+            color: #CFA349;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .footer-text {
+            color: #3A3A3A;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            background-color: #1E4A57;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">GRUPO CONSTRUINDO</div>
+            <img src="./logo_gc.png" alt="Ícone Construindo" style="width:100px; display:block; margin:0 auto;"> -->
+            <div class="logo">CONSTRUINDO <span class="logo-sub">SONHOS</span></div>
+            <div class="header-line">IMOBILIÁRIA & CONSTRUÇÃO • PRAIA DE PIPA / RN</div>
+        </div>
+        <div class="images">
+            <div class="hexagon hex-left">
+                <!-- Substitua pela URL da imagem real -->
+                <img src="https://via.placeholder.com/200x230?text=Casa+Moderna" alt="Casa moderna contemporânea">
+            </div>
+            <div class="hexagon hex-right">
+                <!-- Substitua pela URL da imagem real -->
+                <img src="https://via.placeholder.com/200x230?text=Praia+Aérea" alt="Foto aérea da praia">
+            </div>
+        </div>
+        <h1 class="title">CONSTRUINDO SONHOS NA PRAIA DE PIPA</h1>
+        <h2 class="subtitle">IMÓVEIS, CONSTRUÇÕES E INVESTIMENTOS IMOBILIÁRIOS RENOVADORES</h2>
+        <p class="presentation">A Construindo atua no mercado imobiliário da Praia de Pipa oferecendo consultoria especializada em compra, venda e construção de imóveis. Combinamos qualidade, segurança, experiência e inovação sustentável para transformar e renovar seu sonho em um dos destinos mais desejados do Brasil.</p>
+        <div class="differentials">
+            <h3>NOSSOS DIFERENCIAIS RENOVADORES</h3>
+            <ul>
+                <li>Expertise no mercado imobiliário de Pipa com foco em sustentabilidade</li>
+                <li>Gerenciamento completo e integrado</li>
+                <li>Projetos modernos, personalizados e eco-friendly</li>
+                <li>Transparência, atendimento premium e inovação constante</li>
+            </ul>
+        </div>
+        <div class="services">
+            <h4>SERVIÇOS</h4>
+            <ul>
+                <li>VENDAS DE IMÓVEIS</li>
+                <li>CONSTRUÇÃO & PROJETOS RENOVADORES</li>
+                <li>CONSULTORIA PARA INVESTIDORES</li>
+                <li>REGULARIZAÇÃO & DOCUMENTAÇÃO</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <h2 class="footer-title">CONSTRUA E RENOVE O AMANHÃ, HOJE.</h2>
+            <p class="footer-text">Encontre o imóvel perfeito ou desenvolva seu projeto renovador conosco.</p>
+            <button class="cta-button">ENTRE EM CONTATO</button>
+        </div>
+    </div>
+</body>
+</html>
